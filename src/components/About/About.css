@@ -1,0 +1,70 @@
+/* Styles for the About section */
+#about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+    background-color: #ffffff; /* White background */
+    color: #4b0082; /* Dark purple for text */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .bottomline {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #4b0082; /* Dark purple border */
+    margin-bottom: 40px;
+  }
+  
+  .about-div h1 {
+    color: #4b0082;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  
+  .about-div p,
+  .about-div h3 {
+    color: #4b0082;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .features h3 {
+    color: #4b0082;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .features div {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #4b0082; /* Left border to highlight each feature */
+  }
+  
+  a {
+    color: #663399; /* Softer purple for links */
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #8a2be2; /* Lighter purple on hover */
+  }
+  
+  .thank-you {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4b0082; /* Dark purple */
+  }
+  
+  .thank-you-symbol {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  

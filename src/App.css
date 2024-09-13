@@ -1,0 +1,31 @@
+/*  */
+
+
+#supreme::before {
+  content: '';
+  background: rgb(230,230,230);
+  background: linear-gradient(167deg, rgba(230,230,230,1) 46%, rgba(246,246,246,1) 56%);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#supreme.light {
+  color: rgb(41, 42, 45);
+}
+
+#supreme.light::before {
+  background-color: #F5DEB3
+}
+
+.px {
+  height: 125px;
+}

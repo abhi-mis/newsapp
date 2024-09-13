@@ -1,0 +1,226 @@
+/* Navbar Styles */
+nav {
+    display: flex;
+    width: 100vw;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B0082; /* Dark Purple */
+    height: 80px;
+    border-bottom: 2px solid #8A2BE2; /* Bright Purple */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav.light {
+    background-color: #ffffff; /* White background for light theme */
+    border-bottom: 2px solid #8A2BE2; /* Purple border for light theme */
+}
+
+/* For Flexbox Layout of Menu Items */
+nav ul {
+    display: flex;  /* Display navigation items side by side */
+    gap: 20px;  /* Space between each item */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List items in Navbar */
+nav ul li {
+    display: inline; /* Ensures list items are displayed inline */
+}
+
+#ham {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#ham span {
+    color: #ffffff; /* White for the hamburger icon */
+}
+
+#ham.expand span {
+    color: #4B0082; /* Dark purple when expanded */
+}
+
+#logo {
+    font-size: 40px;
+    font-family: 'Orbit', sans-serif;
+    margin: 15px;
+    color: #ffffff; /* White logo for dark theme */
+    cursor: pointer;
+}
+
+#logo.light {
+    color: #4B0082; /* Dark Purple for light theme */
+}
+
+/* Categories Dropdown */
+#categories {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #ffffff; /* White text */
+    padding: 8px 16px; /* Add padding to match the country selector */
+    border: 2px solid #8A2BE2; /* Purple border */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+#categories-arrow {
+    transition: all 0.5s ease-in-out;
+    color: #ffffff; /* White arrow color */
+}
+
+#categories-arrow.up {
+    transform: rotate(180deg);
+}
+
+#dropdown-content {
+    position: absolute;
+    transition: height 0.5s ease-in-out;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-around;
+    background-color: #4B0082; /* Dark Purple dropdown */
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#dropdown-content.light {
+    background-color: #ffffff; /* White dropdown for light theme */
+}
+
+#dropdown-content.drop {
+    height: 300px;
+}
+
+#dropdown-content a {
+    color: #ffffff; /* White text for dropdown items */
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#dropdown-content.light a {
+    color: #4B0082; /* Dark Purple text in light theme */
+}
+
+#dropdown-content a:hover {
+    background-color: #8A2BE2; /* Bright purple on hover */
+    color: #ffffff; /* Keep white text on hover */
+}
+
+/* Oval Box Style */
+.oval-box {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end; /* Align items to the extreme right */
+    color: #ffffff; /* White text */
+    padding: 8px 16px; /* Padding inside the box */
+    border: 2px solid #8A2BE2; /* Purple border */
+    border-radius: 25px; /* Oval shape */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 15px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease;
+}
+
+
+.oval-box:hover {
+    background-color: #8A2BE2; /* Bright Purple on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+/* Update About Link */
+
+
+/* Search Bar */
+#search_container {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    border: 2px solid #8A2BE2; /* Bright Purple */
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+#searchbox {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 25px 0 0 25px; /* Rounded left side */
+    outline: none;
+    font-size: 16px;
+    color: #4B0082; /* Dark Purple text color */
+}
+
+#searchbtn {
+    background-color: #4B0082; /* Dark Purple button */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0 20px; /* Adjust padding */
+    border-radius: 0 25px 25px 0; /* Rounded right side */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+}
+
+#searchbtn:hover {
+    background-color: #8A2BE2; /* Bright Purple on hover */
+}
+
+/* Move Country Selector to the End */
+nav > ul > li:last-child {
+    margin-left: auto; /* Pushes the Country Selector to the end */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    #ham {
+        display: block;
+        transition: all 0.5s ease-out;
+    }
+
+    #ham.expand span {
+        color: #4B0082; /* Dark purple when expanded */
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    #search_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

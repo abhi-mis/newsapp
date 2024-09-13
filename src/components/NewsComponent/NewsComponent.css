@@ -1,0 +1,124 @@
+
+
+/* News Component container */
+.NewsComponent {
+    background-color:white;
+
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    margin-top: 40px;
+    padding-top: 50px  !important;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 56px -29px rgba(28,0,239,1);
+-webkit-box-shadow: 0px 0px 56px -29px rgba(28,0,239,1);
+-moz-box-shadow: 0px 0px 56px -29px rgba(28,0,239,1);
+}
+
+.NewsComponent.light {
+    background-color: rgb(255, 228, 196);
+    color: black;
+}
+
+
+.NewsComponentTitle {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.NewsComponentTitle.light {
+    color: #613b3b; 
+}
+
+.NewsComponentTitle.dark {
+    color: #f4f4f4; 
+}
+
+/* Base styles for News Item */
+.NewsItem {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(187, 182, 182, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    cursor: pointer;
+}
+
+/* Light version for news item */
+.NewsItem.light {
+    background-color: #f4f4f4; 
+    color: #000000; 
+}
+
+/* Dark version for news item */
+.NewsItem.dark {
+    background-color: #1f003d; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+    color: #ffffff; 
+}
+
+/* Styling for News Item Image */
+.NewsItem img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Content inside news item */
+.NewsItemContent {
+    padding: 15px;
+}
+
+/* Title inside news item */
+.NewsItemTitle {
+    background-color: aqua;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.NewsItemTitle.light {
+    color: #333; 
+}
+
+
+.NewsItemTitle.dark {
+    color: #fff; 
+}
+
+
+.NewsItemDescription {
+    font-size: 14px;
+    color: #ddd;
+}
+
+
+.NewsItem:hover {
+    transform: scale(1.01);
+    z-index: 0;
+    box-shadow: 0 8px 16px rgba(46, 39, 148, 0.4);
+}
+
+
+@media (max-width: 768px) {
+    .NewsComponent {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .NewsItem {
+        width: 100%; 
+    }
+}
