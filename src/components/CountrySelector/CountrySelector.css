@@ -1,14 +1,16 @@
 .country-selector {
     color: white;
+    font-size: 15px;
 }
 
 .country-selector__select {
-    background-color: #100761;
+    background-color:  #8A2BE2;
+    border: 2px solid #ffffff;
     color: white;
-    padding: 10px;
+    padding: 13px;
     border: none;
-    border-radius: 5px;
-    outline: none;
+    border-radius: 50px;
+    
 }
 
 @media (max-width:900px) {

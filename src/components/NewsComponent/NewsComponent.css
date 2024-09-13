@@ -3,8 +3,7 @@
 /* News Component container */
 .NewsComponent {
     background-color:white;
-
-    border-radius: 5px;
+    border-radius: 20px !important;
     width: 90%;
     margin: 20px auto;
     margin-top: 40px;
@@ -43,7 +42,7 @@
 
 /* Base styles for News Item */
 .NewsItem {
-    border-radius: 10px;
+    border-radius: 15px !important;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(187, 182, 182, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -103,7 +102,10 @@
     font-size: 14px;
     color: #ddd;
 }
-
+.hell{
+    text-align: center;
+    
+}
 
 .NewsItem:hover {
     transform: scale(1.01);

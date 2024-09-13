@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "aconews-80cc5"
-  }
+    "default": "aconews3012",
+    "hosting": "aconews3012"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

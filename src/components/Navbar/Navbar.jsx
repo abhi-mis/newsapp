@@ -32,7 +32,9 @@ export default class Navbar extends Component {
                         menu
                     </span>
                 </div>
+            
                 <ul>
+                
                     <li onMouseEnter={this.drop} onMouseLeave={this.drop}>
                         <div id='categories' className="oval-box">
                             Categories<span id='categories-arrow' className="material-symbols-outlined">expand_more</span>
@@ -50,15 +52,14 @@ export default class Navbar extends Component {
                     <li>
                         <Link to="/about" className={`about-link oval-box ${this.props.theme}`}>About</Link>
                     </li>
-                    <li className='oval-box'>
+                    <li className=''>
                         <CountrySelector
                             country={this.props.Country}
                             handleCountryChange={this.props.handleCountryChange}
                             className={`country-selector oval-box ${this.props.theme}`}
                         />
                     </li>
-                </ul>
-                <div id="search_container">
+                    <div id="search_container">
                     <input
                         type="text"
                         id="searchbox"
@@ -72,6 +73,8 @@ export default class Navbar extends Component {
                     />
                     <h5 id='searchbtn' className={`${this.props.theme}`} onClick={this.props.handleSearchSubmit}>Search</h5>
                 </div>
+                </ul>
+                
             </nav>
         );
     }

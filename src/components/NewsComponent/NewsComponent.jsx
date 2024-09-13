@@ -125,7 +125,7 @@ export default class NewsComponent extends Component {
                         `Showing results for "${this.props.q}"`
                     ) : (
                         <React.Fragment>
-                            Top Alert: Key updates coming in fast. <span className="material-symbols-outlined">bolt</span>{' '}
+                           <span className="material-symbols-outlined">bolt</span>{' '} Latest News <span className="material-symbols-outlined">bolt</span>{' '}
                             {this.props.category === 'general' ? '' : `(${this.capitalizeFirstLetter(this.props.category)})`}
                         </React.Fragment>
                     )}
@@ -135,27 +135,20 @@ export default class NewsComponent extends Component {
                     {this.state.articles.map((element) => {
                         return <NewsItem key={element.title} image={element.image} title={element.title} description={element.description} content={element.content} theme={this.props.theme} url={element.url} publishedAt={element.publishedAt} source={element.source} />
                     })}
-                    {this.state.loding && (
-                        <img src={loader} alt="loading..." />
-                    )}
+                    
                     {this.state.noarticles && (
-                        <h2 style={{ textAlign: 'center' }}>Could not find articles for you :(</h2>
+                        <h2 style={{ textAlign: 'center' }}>Could not fetch anything for you.(</h2>
                     )}
                     {this.state.articlesError && (
-                        <div className='Error-message'>
-                            <h2 style={{ textAlign: 'center' }}>Failed to find articles for you :(</h2>
-                            <h3>WHY? Must be one of the following reasons..</h3>
-                            <ul>
-                                <li>
-                                    <h4>This website gets its news from <a href="https://gnews.io" target="_blank" rel="noopener noreferrer">gnews.io</a></h4>
-                                </li>
-                                <li>
-                                    <h4>News you are earching for does not exist.</h4>
-                                </li>
-                            </ul>
+                        
+                            
+                                    <h3>Visit <a href="https://gnews.io" target="_blank" rel="noopener noreferrer">gnews.io</a></h3>
+                    
 
-                        </div>
-
+                    )}
+                    
+                    {this.state.loding && (
+                        <img src={loader} alt="loading..." />
                     )}
                 </div>
             </>

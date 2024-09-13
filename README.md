@@ -4,7 +4,6 @@
 
 Latest News: Access up-to-date news articles from a wide range of sources and categories.
 User-Friendly Interface: Enjoy a clean, intuitive design for an optimal reading experience.
-Customizable Themes: Switch between light and dark modes to suit your preference.
 Smooth Navigation: Navigate seamlessly between pages with React Router DOM.
 API Integration: Fetch news articles using the gnews.io API.
 Loading Feedback: Visual feedback during loading with React Top Loading Bar.
